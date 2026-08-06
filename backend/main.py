@@ -39,11 +39,13 @@ app.add_middleware(
 )
 
 
+@app.get("/api")
 @app.get("/api/health")
 async def health():
     return {"status": "ok", "database_configured": supabase is not None}
 
 
+@app.post("/api", status_code=201)
 @app.post("/api/contact", status_code=201)
 async def create_contact(message: ContactMessage):
     if not supabase:

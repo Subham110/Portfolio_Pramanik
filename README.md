@@ -131,4 +131,4 @@ The serverless dependencies include a Pydantic version compatible with Vercel's 
 
 `SUPABASE_SERVICE_ROLE_KEY` must be a Supabase secret key (or legacy service-role key) and must only be set in Vercel's environment variables—never in `VITE_API_URL` or a frontend `.env` file.
 
-The deployed frontend automatically sends requests to `/api/contact`, which Vercel routes to FastAPI. For local development it still uses `http://localhost:8000` by default.
+The deployed frontend sends contact requests to `/api`, which is the Vercel Function route. For local development it continues to use `http://localhost:8000/api/contact`.

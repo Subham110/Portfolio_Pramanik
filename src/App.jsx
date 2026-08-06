@@ -56,7 +56,10 @@ function App() {
       const apiBaseUrl = import.meta.env.DEV
         ? (import.meta.env.VITE_API_URL || 'http://localhost:8000')
         : ''
-      const response = await fetch(`${apiBaseUrl}/api/contact`, {
+      const contactEndpoint = import.meta.env.DEV
+        ? `${apiBaseUrl}/api/contact`
+        : '/api'
+      const response = await fetch(contactEndpoint, {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form)
       })
       if (!response.ok) throw new Error('Unable to send')
