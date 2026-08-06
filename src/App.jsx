@@ -5,25 +5,27 @@ import {
 } from 'lucide-react'
 
 const skills = [
-  ['AI / ML', 'LLMs (GPT-4, Claude, Gemini), LangChain, LlamaIndex, RAG, Fine-tuning, Embeddings, Vector DBs'],
-  ['Backend', 'Python, FastAPI, Django'],
+  ['AI / ML', 'LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, RAG, MCP, Fine-tuning, Embeddings, Vector DBs'],
+  ['Backend', 'Python (FastAPI, Django)'],
   ['Frontend', 'React, TypeScript'],
-  ['Data', 'PostgreSQL, Redis, Pinecone'],
-  ['Cloud & MLOps', 'Docker, CI/CD, AWS, MLflow, Hugging Face'],
-  ['Frameworks & tools', 'PyTorch, TensorFlow, Transformers, NumPy, Pandas, Matplotlib, Git, Postman, Jira']
+  ['Databases', 'PostgreSQL, SQLAlchemy, Redis, Pinecone'],
+  ['Cloud & DevOps', 'AWS, Docker, CI/CD'],
+  ['MLOps', 'MLflow, Hugging Face'],
+  ['AI frameworks & libraries', 'PyTorch, TensorFlow, Transformers, NumPy, Pandas, Matplotlib'],
+  ['Tools', 'Git, GitHub, Postman, Jira, VS Code']
 ]
 
 const projects = [
   {
     number: '01', icon: Bot, title: 'AI Document Chat Platform',
     copy: 'A smart workspace that helps teams chat with documents, generate summaries and surface the insights that matter.',
-    stack: ['Next.js', 'FastAPI', 'GPT-4o', 'Pinecone', 'AWS'],
-    link: 'https://github.com/Subham110/Personal-voice-Assistant-AI-'
+    stack: ['React', 'FastAPI', 'GPT-4o', 'Pinecone', 'AWS'],
+    link: 'https://github.com/Subham110/DOCUMENT_QnA_BOT'
   },
   {
     number: '02', icon: Code2, title: 'AI Code Review Tool',
     copy: 'An AI assistant that reviews GitHub pull requests automatically, making thoughtful feedback faster and more consistent.',
-    stack: ['Claude AI', 'GitHub API', 'Docker', 'Redis', 'MongoDB'],
+    stack: ['Claude AI', 'GitHub API', 'Docker', 'Redis', 'PostgreSQL'],
     link: 'https://github.com/Subham110/GitHub-AI-Code-Reviewer'
   },
   {
@@ -31,6 +33,12 @@ const projects = [
     copy: 'An intelligent research team of AI agents that collaborates to write clear, well-sourced reports.',
     stack: ['Python', 'LangGraph', 'GPT-4o', 'FastAPI', 'React'],
     link: 'https://github.com/Subham110/Multi-Agent-Research'
+  },
+  {
+    number: '04', icon: Bot, title: 'Personal Voice Assistant AI',
+    copy: 'A personal digital multitasker designed to streamline everyday tasks, boost productivity and make digital interactions easier.',
+    stack: ['Python', 'AI', 'Voice Assistant'],
+    link: 'https://github.com/Subham110/Personal-voice-Assistant-AI-'
   }
 ]
 
@@ -82,7 +90,7 @@ function App() {
         <div className="hero-copy">
           <p className="eyebrow"><Sparkles size={15}/> AI Engineer & product builder</p>
           <h1>I turn AI ideas into <em>useful products.</em></h1>
-          <p className="lead">Building end-to-end intelligent applications—from LLM backends and RAG pipelines to delightful React experiences.</p>
+          <p className="lead">Architecting end-to-end AI solutions by seamlessly bridging RAG pipelines, MCP frameworks, and multi-agent systems with highly intuitive React frontends.</p>
           <div className="hero-actions">
             <a className="button primary" href="#work">Explore my work <ArrowDownRight size={19}/></a>
             <a className="button text-link" href="mailto:subhampramanik326@gmail.com">Get in touch <ArrowUpRight size={18}/></a>
@@ -97,18 +105,25 @@ function App() {
             <div className="response"><Sparkles size={15}/><span></span><span></span><span></span></div>
             <div className="data-row"><b>94.8%</b><small>Answer confidence</small><div className="chart"><i></i><i></i><i></i><i></i><i></i></div></div>
           </div>
-          <div className="floating-tag tag-one"><Database size={17}/><span>RAG pipeline</span></div>
-          <div className="floating-tag tag-two"><Code2 size={17}/><span>Full stack AI</span></div>
+          <ul className="capability-cloud" aria-label="Core AI capabilities">
+            <li className="floating-tag"><Database size={16}/><span>RAG pipeline</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>Full stack AI</span></li>
+            <li className="floating-tag"><Bot size={16}/><span>AI Agent</span></li>
+            <li className="floating-tag"><BrainCircuit size={16}/><span>Multi-Agent</span></li>
+            <li className="floating-tag"><Sparkles size={16}/><span>GenAI</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>CI/CD</span></li>
+            <li className="floating-tag"><BrainCircuit size={16}/><span>LangGraph</span></li>
+          </ul>
         </div>
       </section>
 
       <section className="intro section" id="about">
         <p className="section-kicker">About me</p>
-        <div className="intro-grid"><h2>Thoughtful AI,<br/><em>built for people.</em></h2><div><p>I build production-grade AI systems that make complicated technology feel simple. From handling millions of requests to creating focused tools people genuinely enjoy using, I pair technical depth with a product mindset.</p><p>My foundation spans Python, cloud infrastructure and modern web development—so I can carry a good idea all the way to launch.</p><a href="#contact" className="underlined">More about my approach <ArrowUpRight size={16}/></a></div></div>
+        <div className="intro-grid"><h2>Thoughtful AI,<br/><em>built for You.</em></h2><div><p>I build production-grade AI systems that make complicated technology feel simple. From handling millions of requests to creating focused tools people genuinely enjoy using, I pair technical depth with a product mindset.</p><p>My foundation spans Python, cloud infrastructure and modern web development—so I can carry a good idea all the way to launch.</p><a href="#contact" className="underlined">More about my approach <ArrowUpRight size={16}/></a></div></div>
       </section>
 
       <section className="skills section" id="skills">
-        <div className="section-head"><div><p className="section-kicker">02 / Capabilities</p><h2>Tools of the trade.</h2></div><p>I choose the right tools for the problem—then focus on building something reliable, maintainable and human.</p></div>
+        <div className="section-head"><div><p className="section-kicker">Capabilities</p><h2>Tools of the trade.</h2></div><p>I focus on problem-first development, carefully aligning the optimal tools with the challenge at hand to build resilient, maintainable, and user-centric software.</p></div>
         <div className="skill-grid">{skills.map(([title, detail], index) => <article className="skill-card" key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{detail}</p></article>)}</div>
       </section>
 
@@ -116,8 +131,8 @@ function App() {
         <p className="section-kicker">Experience & education</p>
         <div className="timeline">
           <article className="timeline-card active"><div className="timeline-icon"><BriefcaseBusiness size={22}/></div><div><p className="meta">Current · Bhubaneswar</p><h3>AI Engineer Intern <span>at DeepSurge AI</span></h3><p className="timeline-copy">Building accurate document intelligence, real-time AI chat and data dashboards. I lead small delivery teams, fine-tune models for specialised use cases and deploy cost-efficient cloud systems.</p><a href="https://www.linkedin.com/company/deepsurge-ai/posts/?feedView=all" target="_blank" rel="noreferrer" className="underlined">Company on LinkedIn <ArrowUpRight size={16}/></a></div></article>
-          <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2024 — 2026</p><h3>Master of Computer Applications <span>· AI/ML, RAG, GenAI</span></h3><p className="timeline-copy">GEC Autonomous, Bhubaneswar, Odisha · CGPA 7.54 / 10</p></div></article>
-          <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2021 — 2024</p><h3>B.Sc. Computer Science <span>· Web, AWS, AI</span></h3><p className="timeline-copy">FM University, Baleshwar, Odisha · CGPA 7.3 / 10</p></div></article>
+          <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2024 — 2026</p><h3>Master of Computer Applications <span>. Full Stack Development, Cloud Computing, AI/ML, GenAI, DevOps</span></h3><p className="timeline-copy">GEC Autonomous, Bhubaneswar, Odisha · CGPA 7.54 / 10</p></div></article>
+          <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2021 — 2024</p><h3>B.Sc. Computer Science <span>· Java, Python, Data Science, Software Engineering, AI</span></h3><p className="timeline-copy">FM University, Baleshwar, Odisha · CGPA 7.3 / 10</p></div></article>
         </div>
       </section>
 
