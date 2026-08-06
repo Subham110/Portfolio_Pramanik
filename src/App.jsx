@@ -53,7 +53,10 @@ function App() {
     event.preventDefault()
     setStatus('sending')
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/contact`, {
+      const apiBaseUrl = import.meta.env.DEV
+        ? (import.meta.env.VITE_API_URL || 'http://localhost:8000')
+        : ''
+      const response = await fetch(`${apiBaseUrl}/api/contact`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form)
       })
       if (!response.ok) throw new Error('Unable to send')

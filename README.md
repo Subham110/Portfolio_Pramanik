@@ -112,7 +112,21 @@ Then open `http://localhost:5173`, complete the contact form and submit it. A ne
 
 ## Deployment notes
 
-- Deploy the `dist` folder to a static hosting service such as Vercel or Netlify.
-- Deploy the FastAPI `backend` separately (for example, Render, Railway or AWS).
-- Set `VITE_API_URL` to the public URL of the deployed FastAPI API, then rebuild the frontend.
-- Set `CORS_ORIGINS` in the backend environment to your deployed frontend domain, for example `https://your-portfolio.vercel.app`.
+### Deploy on Vercel
+
+The project contains a Vercel Function at `api/index.py`, so the contact form works on the same deployed domain. You do **not** need to host the FastAPI backend separately for this Vercel setup.
+
+1. In Vercel, open your project and go to **Settings → Environment Variables**.
+2. Add these variables for **Production** (and Preview if you want contact forms to work in preview deployments):
+
+   ```env
+   SUPABASE_URL=https://your-project-ref.supabase.co
+   SUPABASE_SERVICE_ROLE_KEY=your-supabase-secret-key
+   CORS_ORIGINS=https://your-portfolio.vercel.app
+   ```
+
+3. Save the variables, commit and push this repository, then select **Deployments → Redeploy** in Vercel.
+
+`SUPABASE_SERVICE_ROLE_KEY` must be a Supabase secret key (or legacy service-role key) and must only be set in Vercel's environment variables—never in `VITE_API_URL` or a frontend `.env` file.
+
+The deployed frontend automatically sends requests to `/api/contact`, which Vercel routes to FastAPI. For local development it still uses `http://localhost:8000` by default.
