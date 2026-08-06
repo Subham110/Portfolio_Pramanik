@@ -63,7 +63,7 @@ function App() {
 
   return <>
     <header className="header">
-      <a className="brand" href="#home" aria-label="Subham Pramanik home"><span>SP</span>Subham.</a>
+      <a className="brand" href="#home" aria-label="Subham Pramanik home"><span>SP</span>Subham Pramanik</a>
       <nav className={open ? 'nav nav-open' : 'nav'}>
         {nav.map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}>{item}</a>)}
         <a className="nav-cta" href="#contact" onClick={() => setOpen(false)}>Let's talk <ArrowUpRight size={15}/></a>
@@ -97,7 +97,7 @@ function App() {
       </section>
 
       <section className="intro section" id="about">
-        <p className="section-kicker">01 / About me</p>
+        <p className="section-kicker">About me</p>
         <div className="intro-grid"><h2>Thoughtful AI,<br/><em>built for people.</em></h2><div><p>I build production-grade AI systems that make complicated technology feel simple. From handling millions of requests to creating focused tools people genuinely enjoy using, I pair technical depth with a product mindset.</p><p>My foundation spans Python, cloud infrastructure and modern web development—so I can carry a good idea all the way to launch.</p><a href="#contact" className="underlined">More about my approach <ArrowUpRight size={16}/></a></div></div>
       </section>
 
@@ -107,7 +107,7 @@ function App() {
       </section>
 
       <section className="experience section" id="experience">
-        <p className="section-kicker">03 / Experience & education</p>
+        <p className="section-kicker">Experience & education</p>
         <div className="timeline">
           <article className="timeline-card active"><div className="timeline-icon"><BriefcaseBusiness size={22}/></div><div><p className="meta">Current · Bhubaneswar</p><h3>AI Engineer Intern <span>at DeepSurge AI</span></h3><p className="timeline-copy">Building accurate document intelligence, real-time AI chat and data dashboards. I lead small delivery teams, fine-tune models for specialised use cases and deploy cost-efficient cloud systems.</p><a href="https://www.linkedin.com/company/deepsurge-ai/posts/?feedView=all" target="_blank" rel="noreferrer" className="underlined">Company on LinkedIn <ArrowUpRight size={16}/></a></div></article>
           <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2024 — 2026</p><h3>Master of Computer Applications <span>· AI/ML, RAG, GenAI</span></h3><p className="timeline-copy">GEC Autonomous, Bhubaneswar, Odisha · CGPA 7.54 / 10</p></div></article>
@@ -116,17 +116,17 @@ function App() {
       </section>
 
       <section className="work section" id="work">
-        <div className="section-head"><div><p className="section-kicker">04 / Selected work</p><h2>Ideas made real.</h2></div><a href="https://github.com/Subham110" target="_blank" rel="noreferrer" className="underlined">View GitHub <ArrowUpRight size={16}/></a></div>
+        <div className="section-head"><div><p className="section-kicker">Selected work</p><h2>Ideas made real.</h2></div><a href="https://github.com/Subham110" target="_blank" rel="noreferrer" className="underlined">View GitHub <ArrowUpRight size={16}/></a></div>
         <div className="projects">{projects.map((project) => { const Icon = project.icon; return <article className="project" key={project.title}><div className="project-mark"><span>{project.number}</span><Icon size={32}/></div><div className="project-main"><h3>{project.title}</h3><p>{project.copy}</p><div className="pills">{project.stack.map(item => <span key={item}>{item}</span>)}</div></div><a href={project.link} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`} className="project-link"><ArrowUpRight size={23}/></a></article>})}</div>
         <a className="live-project" href="https://find-home-one.vercel.app/" target="_blank" rel="noreferrer"><span><ExternalLink size={19}/> Also explore Find Home — a live deployed project</span><ArrowUpRight size={20}/></a>
       </section>
 
       <section className="contact section" id="contact">
-        <div className="contact-copy"><p className="section-kicker">05 / Contact</p><h2>Have an idea?<br/><em>Let's build it.</em></h2><p>Whether it is a new AI product, a complex problem or an interesting opportunity, my inbox is open.</p><a href="mailto:subhampramanik326@gmail.com" className="email-link">subhampramanik326@gmail.com <ArrowUpRight size={18}/></a><div className="contact-details"><span><MapPin size={17}/> Bhubaneswar, Odisha</span><span><Phone size={17}/> +91 7854926631</span></div><div className="socials"><a href="https://www.linkedin.com/in/subham-pramanik-9b7601323/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><SocialIcon name="linkedin" /></a><a href="https://github.com/Subham110" target="_blank" rel="noreferrer" aria-label="GitHub"><SocialIcon name="github" /></a><a href="https://x.com/Subham6631" target="_blank" rel="noreferrer" aria-label="X / Twitter"><SocialIcon name="twitter" /></a></div></div>
+        <div className="contact-copy"><p className="section-kicker">Contact</p><h2>Have an idea?<br/><em>Let's build it.</em></h2><p>Whether it is a new AI product, a complex problem or an interesting opportunity, my inbox is open.</p><a href="mailto:subhampramanik326@gmail.com" className="email-link">subhampramanik326@gmail.com <ArrowUpRight size={18}/></a><div className="contact-details"><span><MapPin size={17}/> Bhubaneswar, Odisha</span><span><Phone size={17}/> +91 7854926631</span></div><div className="socials"><a href="https://www.linkedin.com/in/subham-pramanik-9b7601323/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><SocialIcon name="linkedin" /></a><a href="https://github.com/Subham110" target="_blank" rel="noreferrer" aria-label="GitHub"><SocialIcon name="github" /></a><a href="https://x.com/Subham6631" target="_blank" rel="noreferrer" aria-label="X / Twitter"><SocialIcon name="twitter" /></a></div></div>
         <form className="contact-form" onSubmit={submit}><div className="form-row"><label>Name<input required value={form.name} onChange={e => setForm({...form, name: e.target.value})} placeholder="Your name"/></label><label>Email<input required type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="you@email.com"/></label></div><label>Phone number <small>(optional)</small><input value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} placeholder="+91 00000 00000"/></label><label>Message<textarea required rows="5" value={form.message} onChange={e => setForm({...form, message: e.target.value})} placeholder="Tell me a little about what you're working on..."/></label>{status === 'success' && <p className="form-status success"><Check size={17}/> Thanks—your message has been sent.</p>}{status === 'error' && <p className="form-status error">Couldn’t send your message. Please email me directly.</p>}<button className="button primary submit" disabled={status === 'sending'}>{status === 'sending' ? 'Sending…' : 'Send message'} <Send size={18}/></button></form>
       </section>
     </main>
-    <footer><a className="brand" href="#home"><span>SP</span>Subham.</a><p>© {new Date().getFullYear()} Subham Pramanik. Built with care.</p><a href="#home" className="top">Back to top <ArrowUpRight size={15}/></a></footer>
+    <footer><a className="brand" href="#home"><span>SP</span>Subham Pramanik</a><p>© {new Date().getFullYear()} Subham Pramanik. Built with care.</p><a href="#home" className="top">Back to top <ArrowUpRight size={15}/></a></footer>
   </>
 }
 
