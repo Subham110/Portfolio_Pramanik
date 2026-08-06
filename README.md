@@ -116,7 +116,7 @@ Then open `http://localhost:5173`, complete the contact form and submit it. A ne
 
 The project contains a Vercel Function at `api/index.py`, so the contact form works on the same deployed domain. You do **not** need to host the FastAPI backend separately for this Vercel setup.
 
-Vercel uses Python 3.13 for the serverless function, pinned in `.python-version`. This avoids an unsupported Python 3.14 dependency build.
+The serverless dependencies include a Pydantic version compatible with Vercel's current Python 3.14 runtime.
 
 1. In Vercel, open your project and go to **Settings → Environment Variables**.
 2. Add these variables for **Production** (and Preview if you want contact forms to work in preview deployments):
