@@ -3,6 +3,7 @@ import {
   ArrowDownRight, ArrowUpRight, Bot, BrainCircuit, BriefcaseBusiness, Check,
   Code2, Database, GraduationCap, MapPin, Menu, Phone, Send, Sparkles, X, ExternalLink
 } from 'lucide-react'
+import AiAgentWidget from './components/AiAgentWidget'
 
 const skills = [
   ['AI / ML', 'LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, RAG, MCP, Fine-tuning, Embeddings, Vector DBs'],
@@ -147,6 +148,7 @@ function App() {
         <form className="contact-form" onSubmit={submit}><div className="form-row"><label>Name<input required value={form.name} onChange={e => setForm({...form, name: e.target.value})} placeholder="Your name"/></label><label>Email<input required type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})} placeholder="you@email.com"/></label></div><label>Phone number <small>(optional)</small><input value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} placeholder="+91 00000 00000"/></label><label>Message<textarea required rows="5" value={form.message} onChange={e => setForm({...form, message: e.target.value})} placeholder="Tell me a little about what you're working on..."/></label>{status === 'success' && <p className="form-status success"><Check size={17}/> Thanks—your message has been sent.</p>}{status === 'error' && <p className="form-status error">Couldn’t send your message. Please email me directly.</p>}<button className="button primary submit" disabled={status === 'sending'}>{status === 'sending' ? 'Sending…' : 'Send message'} <Send size={18}/></button></form>
       </section>
     </main>
+    <AiAgentWidget />
     <footer><a className="brand" href="#home"><span>SP</span>Subham Pramanik</a><p>© {new Date().getFullYear()} Subham Pramanik. Built with care.</p><a href="#home" className="top">Back to top <ArrowUpRight size={15}/></a></footer>
   </>
 }
