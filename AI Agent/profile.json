@@ -1,80 +1,80 @@
 {
   "name": "Subham Pramanik",
-  "headline": "AI Engineer and product builder",
-  "about": "Subham builds end-to-end intelligent applications, from LLM-powered backends and RAG pipelines to modern React frontends. He enjoys turning AI ideas into simple, useful products.",
+  "headline": "🤖 AI Engineer & Product Builder",
+  "about": "👋 Hi! I build end-to-end intelligent applications, from LLM-powered backends and RAG pipelines to modern React frontends. I love turning AI ideas into simple, useful products.",
   "contact": {
-    "email": "subhampramanik326@gmail.com",
-    "phone": "+91 7854926631",
-    "location": "Bhubaneswar, Odisha"
+    "email": "📧 subhampramanik326@gmail.com",
+    "phone": "📱 +91 7854926631",
+    "location": "📍 Bhubaneswar, Odisha"
   },
   "socials": {
-    "linkedin": "https://www.linkedin.com/in/subham-pramanik-9b7601323/",
-    "github": "https://github.com/Subham110",
-    "x_twitter": "https://x.com/Subham6631"
+    "linkedin": "🔗 LinkedIn: https://www.linkedin.com/in/subham-pramanik-9b7601323/",
+    "github": "🐙 GitHub: https://github.com/Subham110",
+    "x_twitter": "𝕏 Twitter: https://x.com/Subham6631"
   },
   "experience": [
     {
-      "role": "AI Engineer Intern",
+      "role": "💼 AI Engineer Intern",
       "company": "DeepSurge AI",
       "location": "Bhubaneswar",
-      "details": "Built document intelligence systems, real-time AI chat and file upload experiences, model fine-tuning workflows, real-time dashboards, and cost-efficient cloud deployments. Also led a small delivery team."
+      "details": "🔧 Built document intelligence systems, real-time AI chat and file upload experiences, model fine-tuning workflows, real-time dashboards, and cost-efficient cloud deployments. Also led a small delivery team."
     }
   ],
   "education": [
     {
-      "degree": "Master of Computer Applications (MCA)",
+      "degree": "🎓 Master of Computer Applications (MCA)",
       "focus": "AI/ML, RAG and GenAI",
       "school": "GEC Autonomous, Bhubaneswar, Odisha",
       "period": "2024 - 2026",
-      "cgpa": "7.54/10"
+      "cgpa": "7.54/10 ⭐"
     },
     {
-      "degree": "B.Sc. Computer Science",
+      "degree": "📚 B.Sc. Computer Science",
       "focus": "Web Development, AWS and AI",
       "school": "FM University, Baleshwar, Odisha",
       "period": "2021 - 2024",
-      "cgpa": "7.3/10"
+      "cgpa": "7.3/10 ⭐"
     }
   ],
   "skills": {
-    "AI/ML": "LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, MCP, RAG, fine-tuning, embeddings and vector databases",
-    "Backend": "Python, FastAPI and Django",
-    "Frontend": "React and TypeScript",
-    "Databases": "PostgreSQL, SQLAlchemy, Redis and Pinecone",
-    "Cloud and DevOps": "AWS, Docker and CI/CD",
-    "MLOps": "MLflow and Hugging Face",
-    "AI frameworks and libraries": "PyTorch, TensorFlow, Transformers, NumPy, Pandas and Matplotlib",
-    "Tools": "Git/GitHub, Postman, Jira and VS Code"
+    "🤖 AI/ML": "LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, MCP, RAG, fine-tuning, embeddings and vector databases",
+    "🔧 Backend": "Python, FastAPI and Django",
+    "🎨 Frontend": "React and TypeScript",
+    "🗄️ Databases": "PostgreSQL, SQLAlchemy, Redis and Pinecone",
+    "☁️ Cloud & DevOps": "AWS, Docker and CI/CD",
+    "⚙️ MLOps": "MLflow and Hugging Face",
+    "📊 AI Frameworks": "PyTorch, TensorFlow, Transformers, NumPy, Pandas and Matplotlib",
+    "🛠️ Tools": "Git/GitHub, Postman, Jira and VS Code"
   },
   "projects": [
     {
-      "name": "AI Document Chat Platform",
+      "name": "💬 AI Document Chat Platform",
       "technologies": "React, FastAPI, GPT-4o, Pinecone, PostgreSQL and AWS",
-      "details": "A platform for chatting with company documents, generating summaries and finding useful insights.",
+      "details": "A smart platform for chatting with company documents, generating summaries and finding useful insights.",
       "repository": "https://github.com/Subham110/DOCUMENT_QnA_BOT"
     },
     {
-      "name": "AI Code Review Tool for GitHub",
+      "name": "🔍 AI Code Review Tool for GitHub",
       "technologies": "Claude AI, GitHub API, Docker, Redis and PostgreSQL",
-      "details": "An assistant that automatically reviews GitHub pull requests and provides feedback.",
+      "details": "An intelligent assistant that automatically reviews GitHub pull requests and provides thoughtful feedback.",
       "repository": "https://github.com/Subham110/GitHub-AI-Code-Reviewer"
     },
     {
-      "name": "Multi-Agent AI Research System",
+      "name": "🧠 Multi-Agent AI Research System",
       "technologies": "Python, LangGraph, GPT-4o, FastAPI and React",
-      "details": "A team of collaborating AI agents that produces high-quality research reports.",
+      "details": "A collaborative team of AI agents that produces high-quality, well-sourced research reports.",
       "repository": "https://github.com/Subham110/Multi-Agent-Research"
     },
     {
-      "name": "Personal Voice Assistant AI",
+      "name": "🎙️ Personal Voice Assistant AI",
       "technologies": "Python and AI",
-      "details": "A digital multitasker designed to streamline everyday tasks and productivity.",
+      "details": "A smart digital multitasker designed to streamline everyday tasks and boost productivity.",
       "repository": "https://github.com/Subham110/Personal-voice-Assistant-AI-"
     },
     {
-      "name": "Find Home",
+      "name": "🏠 Find Home",
       "technologies": "Deployed web project",
-      "details": "A live project for finding homes.",
+      "details": "A live project for finding your perfect home.",
       "live": "https://find-home-one.vercel.app/"
     }
   ]
