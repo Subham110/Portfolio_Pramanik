@@ -89,7 +89,7 @@ function App() {
     <main>
       <section className="hero section" id="home">
         <div className="hero-copy">
-          <p className="eyebrow"><Sparkles size={15}/> AI Engineer & product builder</p>
+          <p className="eyebrow"><Sparkles size={0}/> AI Engineer & product builder</p>
           <h1>I turn AI ideas into <em>useful products.</em></h1>
           <p className="lead">Architecting end-to-end AI solutions by seamlessly bridging RAG pipelines, MCP frameworks, and multi-agent systems with highly intuitive React frontends.</p>
           <div className="hero-actions">
@@ -107,13 +107,18 @@ function App() {
             <div className="data-row"><b>94.8%</b><small>Answer confidence</small><div className="chart"><i></i><i></i><i></i><i></i><i></i></div></div>
           </div>
           <ul className="capability-cloud" aria-label="Core AI capabilities">
-            <li className="floating-tag"><Database size={16}/><span>RAG pipeline</span></li>
+            <li className="floating-tag"><Database size={16}/><span>RAG</span></li>
             <li className="floating-tag"><Code2 size={16}/><span>Full stack AI</span></li>
             <li className="floating-tag"><Bot size={16}/><span>AI Agent</span></li>
             <li className="floating-tag"><BrainCircuit size={16}/><span>Multi-Agent</span></li>
             <li className="floating-tag"><Sparkles size={16}/><span>GenAI</span></li>
             <li className="floating-tag"><Code2 size={16}/><span>CI/CD</span></li>
             <li className="floating-tag"><BrainCircuit size={16}/><span>LangGraph</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>MCP</span></li>
+            <li className="floating-tag"><Bot size={16}/><span>Docker</span></li>
+            <li className="floating-tag"><BrainCircuit size={16}/><span>Embedding</span></li>
+            <li className="floating-tag"><Database size={16}/><span>Vector DB</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>AWS</span></li>
           </ul>
         </div>
       </section>
