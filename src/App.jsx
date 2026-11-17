@@ -1,42 +1,48 @@
 import { useState } from 'react'
 import {
   ArrowDownRight, ArrowUpRight, Bot, BrainCircuit, BriefcaseBusiness, Check,
-  Code2, Database, GraduationCap, MapPin, Menu, Phone, Send, Sparkles, X, ExternalLink
+  Code2, Cpu, Database, GraduationCap, MapPin, Menu, Phone, Send, Sparkles, X, ExternalLink
 } from 'lucide-react'
 import AiAgentWidget from './components/AiAgentWidget'
 
 const skills = [
-  ['AI / ML', 'LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, RAG, MCP, Fine-tuning, Embeddings, Vector DBs'],
-  ['Backend', 'Python (FastAPI, Django)'],
-  ['Frontend', 'React, TypeScript'],
-  ['Databases', 'PostgreSQL, SQLAlchemy, Redis, Pinecone'],
-  ['Cloud & DevOps', 'AWS, Docker, CI/CD'],
-  ['MLOps', 'MLflow, Hugging Face'],
+  ['AI / ML', 'LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, RAG, MCP, Fine-tuning, Vector DBs'],
+  ['Backend', 'Python, C/C++, FastAPI, REST APIs, Django'],
+  ['Frontend', 'React.js, JavaScript, TypeScript'],
+  ['Databases', 'SQL, PostgreSQL, SQLAlchemy, Redis, Pinecone, Vector DB'],
+  ['Cloud & DevOps', 'AWS, Docker, Kubernetes, Nginx, CI/CD'],
+  ['MLOps', 'MLflow, Hugging Face, Scikit-learn'],
   ['AI frameworks & libraries', 'PyTorch, TensorFlow, Transformers, NumPy, Pandas, Matplotlib'],
-  ['Tools', 'Git, GitHub, Postman, Jira, VS Code']
+  ['Tools', 'Git, GitLab, GitHub, Postman, Jira, VS Code']
 ]
 
 const projects = [
   {
-    number: '01', icon: Bot, title: 'AI Document Chat Platform',
+    number: '01', icon: Cpu, title: 'ReAct — Autonomous AI & ML Platform',
+    copy: 'A production-grade dual-microservice platform pairing high-performance ML inference (KNN & LinearSVC) with an autonomous LangChain ReAct agent and real-time React visualizer behind Nginx.',
+    stack: ['Python', 'FastAPI', 'LangChain', 'Scikit-learn', 'React.js', 'Docker', 'Nginx'],
+    link: 'https://github.com/Subham110/ReAct'
+  },
+  {
+    number: '02', icon: Bot, title: 'AI Document Chat Platform',
     copy: 'A smart workspace that helps teams chat with documents, generate summaries and surface the insights that matter.',
     stack: ['React', 'FastAPI', 'GPT-4o', 'Pinecone', 'AWS'],
     link: 'https://github.com/Subham110/DOCUMENT_QnA_BOT'
   },
   {
-    number: '02', icon: Code2, title: 'AI Code Review Tool',
+    number: '03', icon: Code2, title: 'AI Code Review Tool',
     copy: 'An AI assistant that reviews GitHub pull requests automatically, making thoughtful feedback faster and more consistent.',
     stack: ['Claude AI', 'GitHub API', 'Docker', 'Redis', 'PostgreSQL'],
     link: 'https://github.com/Subham110/GitHub-AI-Code-Reviewer'
   },
   {
-    number: '03', icon: BrainCircuit, title: 'Multi-Agent AI Research',
+    number: '04', icon: BrainCircuit, title: 'Multi-Agent AI Research',
     copy: 'An intelligent research team of AI agents that collaborates to write clear, well-sourced reports.',
     stack: ['Python', 'LangGraph', 'GPT-4o', 'FastAPI', 'React'],
     link: 'https://github.com/Subham110/Multi-Agent-Research'
   },
   {
-    number: '04', icon: Bot, title: 'Personal Voice Assistant AI',
+    number: '05', icon: Bot, title: 'Personal Voice Assistant AI',
     copy: 'A personal digital multitasker designed to streamline everyday tasks, boost productivity and make digital interactions easier.',
     stack: ['Python', 'AI', 'Voice Assistant'],
     link: 'https://github.com/Subham110/Personal-voice-Assistant-AI-'
@@ -108,15 +114,15 @@ function App() {
           </div>
           <ul className="capability-cloud" aria-label="Core AI capabilities">
             <li className="floating-tag"><Database size={16}/><span>RAG</span></li>
-            <li className="floating-tag"><Code2 size={16}/><span>Full stack AI</span></li>
+            <li className="floating-tag"><BrainCircuit size={16}/><span>LangChain</span></li>
+            <li className="floating-tag"><Cpu size={16}/><span>PyTorch</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>FastAPI</span></li>
             <li className="floating-tag"><Bot size={16}/><span>AI Agent</span></li>
             <li className="floating-tag"><BrainCircuit size={16}/><span>Multi-Agent</span></li>
-            <li className="floating-tag"><Sparkles size={16}/><span>GenAI</span></li>
-            <li className="floating-tag"><Code2 size={16}/><span>CI/CD</span></li>
-            <li className="floating-tag"><BrainCircuit size={16}/><span>LangGraph</span></li>
             <li className="floating-tag"><Code2 size={16}/><span>MCP</span></li>
             <li className="floating-tag"><Bot size={16}/><span>Docker</span></li>
-            <li className="floating-tag"><BrainCircuit size={16}/><span>Embedding</span></li>
+            <li className="floating-tag"><Cpu size={16}/><span>Kubernetes</span></li>
+            <li className="floating-tag"><Code2 size={16}/><span>Nginx</span></li>
             <li className="floating-tag"><Database size={16}/><span>Vector DB</span></li>
             <li className="floating-tag"><Code2 size={16}/><span>AWS</span></li>
           </ul>
@@ -129,14 +135,45 @@ function App() {
       </section>
 
       <section className="skills section" id="skills">
-        <div className="section-head"><div><p className="section-kicker">Capabilities</p><h2>Tools of the trade.</h2></div><p>I focus on problem-first development, carefully aligning the optimal tools with the challenge at hand to build resilient, maintainable, and user-centric software.</p></div>
-        <div className="skill-grid">{skills.map(([title, detail], index) => <article className="skill-card" key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{detail}</p></article>)}</div>
+        <div className="section-head">
+          <div>
+            <p className="section-kicker">Capabilities</p>
+            <h2>Tools of the trade.</h2>
+          </div>
+          <p>I focus on problem-first development, carefully aligning the optimal tools with the challenge at hand to build resilient, maintainable, and user-centric software.</p>
+        </div>
+        <div className="skill-grid">
+          {skills.map(([title, detail], index) => (
+            <article className="skill-card" key={title}>
+              <span>0{index + 1}</span>
+              <h3>{title}</h3>
+              <p>{detail}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="experience section" id="experience">
         <p className="section-kicker">Experience & education</p>
         <div className="timeline">
-          <article className="timeline-card active"><div className="timeline-icon"><BriefcaseBusiness size={22}/></div><div><p className="meta">Current · Bhubaneswar</p><h3>AI Engineer Intern <span>at DeepSurge AI</span></h3><p className="timeline-copy">Building accurate document intelligence, real-time AI chat and data dashboards. I lead small delivery teams, fine-tune models for specialised use cases and deploy cost-efficient cloud systems.</p><a href="https://www.linkedin.com/company/deepsurge-ai/posts/?feedView=all" target="_blank" rel="noreferrer" className="underlined">Company on LinkedIn <ArrowUpRight size={16}/></a></div></article>
+          <article className="timeline-card active">
+            <div className="timeline-icon"><BriefcaseBusiness size={22}/></div>
+            <div>
+              <p className="meta">Client Project · Janjgir, Chhattisgarh</p>
+              <h3>Full Stack Developer & Consultant <span>for SB CONTROL SYSTEMS</span></h3>
+              <p className="timeline-copy">Engineered and deployed the production web application for Power Plant Electrical & Instrumentation Spares (sbcontrolsys.com). Built product cataloging, responsive inquiry flows, and cloud hosting.</p>
+              <a href="https://sbcontrolsys.com/" target="_blank" rel="noreferrer" className="underlined">Visit sbcontrolsys.com <ArrowUpRight size={16}/></a>
+            </div>
+          </article>
+          <article className="timeline-card active">
+            <div className="timeline-icon"><BriefcaseBusiness size={22}/></div>
+            <div>
+              <p className="meta">Current · Bhubaneswar</p>
+              <h3>AI Engineer Intern <span>at DeepSurge AI</span></h3>
+              <p className="timeline-copy">Building accurate document intelligence, real-time AI chat and data dashboards. I lead small delivery teams, fine-tune models for specialised use cases and deploy cost-efficient cloud systems.</p>
+              <a href="https://www.linkedin.com/company/deepsurge-ai/posts/?feedView=all" target="_blank" rel="noreferrer" className="underlined">Company on LinkedIn <ArrowUpRight size={16}/></a>
+            </div>
+          </article>
           <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2024 — 2026</p><h3>Master of Computer Applications <span>. Full Stack Development, Cloud Computing, AI/ML, GenAI, DevOps</span></h3><p className="timeline-copy">GEC Autonomous, Bhubaneswar, Odisha · CGPA 7.54 / 10</p></div></article>
           <article className="timeline-card"><div className="timeline-icon neutral"><GraduationCap size={22}/></div><div><p className="meta">2021 — 2024</p><h3>B.Sc. Computer Science <span>· Java, Python, Data Science, Software Engineering, AI</span></h3><p className="timeline-copy">FM University, Baleshwar, Odisha · CGPA 7.3 / 10</p></div></article>
         </div>
@@ -144,8 +181,39 @@ function App() {
 
       <section className="work section" id="work">
         <div className="section-head"><div><p className="section-kicker">Selected work</p><h2>Ideas made real.</h2></div><a href="https://github.com/Subham110" target="_blank" rel="noreferrer" className="underlined">View GitHub <ArrowUpRight size={16}/></a></div>
-        <div className="projects">{projects.map((project) => { const Icon = project.icon; return <article className="project" key={project.title}><div className="project-mark"><span>{project.number}</span><Icon size={32}/></div><div className="project-main"><h3>{project.title}</h3><p>{project.copy}</p><div className="pills">{project.stack.map(item => <span key={item}>{item}</span>)}</div></div><a href={project.link} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`} className="project-link"><ArrowUpRight size={23}/></a></article>})}</div>
-        <a className="live-project" href="https://find-home-one.vercel.app/" target="_blank" rel="noreferrer"><span><ExternalLink size={19}/> Also explore Find Home — a live deployed project</span><ArrowUpRight size={20}/></a>
+        <div className="projects">
+          {projects.map((project) => {
+            const Icon = project.icon
+            return (
+              <article className="project" key={project.title}>
+                <div className="project-mark">
+                  <span>{project.number}</span>
+                  <Icon size={32}/>
+                </div>
+                <div className="project-main">
+                  <h3>{project.title}</h3>
+                  <p>{project.copy}</p>
+                  <div className="pills">
+                    {project.stack.map(item => <span key={item}>{item}</span>)}
+                  </div>
+                </div>
+                <a href={project.link} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`} className="project-link">
+                  <ArrowUpRight size={23}/>
+                </a>
+              </article>
+            )
+          })}
+        </div>
+        <div className="live-projects-stack">
+          <a className="live-project" href="https://sbcontrolsys.com/" target="_blank" rel="noreferrer">
+            <span><ExternalLink size={19}/> Deployed Client App: SB CONTROL SYSTEMS — Power Plant E&I Spares (sbcontrolsys.com)</span>
+            <ArrowUpRight size={20}/>
+          </a>
+          <a className="live-project secondary-live" href="https://find-home-one.vercel.app/" target="_blank" rel="noreferrer">
+            <span><ExternalLink size={19}/> Also explore Find Home — a live deployed project</span>
+            <ArrowUpRight size={20}/>
+          </a>
+        </div>
       </section>
 
       <section className="contact section" id="contact">

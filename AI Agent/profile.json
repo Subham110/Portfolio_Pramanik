@@ -12,12 +12,67 @@
     "github": "🐙 GitHub: https://github.com/Subham110",
     "x_twitter": "𝕏 Twitter: https://x.com/Subham6631"
   },
+  "tools_of_the_trade": [
+    "Python",
+    "C/C++",
+    "Scikit-learn",
+    "PyTorch",
+    "TensorFlow",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "FastAPI",
+    "REST APIs",
+    "React.js",
+    "SQL",
+    "Vector DB",
+    "LangChain",
+    "LangGraph",
+    "RAG",
+    "MCP",
+    "Git",
+    "GitLab",
+    "GitHub",
+    "Docker",
+    "CI/CD",
+    "Nginx",
+    "Kubernetes",
+    "AWS"
+  ],
   "experience": [
+    {
+      "role": "💼 Full Stack Developer & Client Consultant",
+      "company": "SB CONTROL SYSTEMS",
+      "location": "Janjgir, Chhattisgarh",
+      "details": "Engineered, launched, and deployed the official commercial web application for Power Plant Electrical & Instrumentation Spares (https://sbcontrolsys.com/). Built the product catalog, responsive UI, customer inquiry pipelines, and production cloud hosting for the enterprise.",
+      "live": "https://sbcontrolsys.com/",
+      "corporate_info": {
+        "company_name": "SB CONTROL SYSTEMS",
+        "gstin": "22DMDPG9332M1ZY",
+        "location": "Rajveer Plaza / Rajveer Complex, Near SBI Main Branch, Main Road, Janjgir, Chhattisgarh – 495668, India",
+        "contact": "+91 9993947227, 7440416330",
+        "email": "sales@sbcontrolsystem.com"
+      }
+    },
     {
       "role": "💼 AI Engineer Intern",
       "company": "DeepSurge AI",
       "location": "Bhubaneswar",
-      "details": "🔧 Built document intelligence systems, real-time AI chat and file upload experiences, model fine-tuning workflows, real-time dashboards, and cost-efficient cloud deployments. Also led a small delivery team."
+      "details": "Engineered end-to-end Machine Learning, Deep Learning, and Generative AI solutions. Preprocessed data, tuned hyperparameters, trained CNNs and ML models, built RAG pipelines with vector databases, and deployed FastAPI REST microservices. Contributed across the full SDLC using React.js, Docker, CI/CD, and collaborative Git workflows.",
+      "responsibilities": [
+        "Worked on Machine Learning and Deep Learning data preprocessing, model training, evaluation, and performance improvement.",
+        "Applied data cleaning, normalization, feature scaling, and train-test splitting to improve data quality and model reliability.",
+        "Worked on Computer Vision tasks using CNNs and deep learning models for image classification and object detection.",
+        "Worked on model tuning and performance improvement by adjusting hyperparameters and evaluating model results.",
+        "Deployed machine learning models using Python and FastAPI, integrating models with REST APIs.",
+        "Applied Natural Language Processing (NLP) techniques for text processing, information extraction, and intelligent text-based applications.",
+        "Worked with Generative AI, prompt engineering, and LLM APIs (Groq, Gemini, OpenRouter) to build AI-powered applications.",
+        "Implemented Retrieval-Augmented Generation (RAG) workflows using document processing, text chunking, embeddings, semantic search, and vector databases.",
+        "Contributed to full-stack web application development using React.js, JavaScript, FastAPI, and database integration.",
+        "Followed SDLC practices, including requirement analysis, coding, testing, debugging, and maintenance.",
+        "Collaborated with team members on development tasks, troubleshooting, code reviews, and project delivery.",
+        "Used Git, GitHub, Docker, and CI/CD workflows to support version control, testing, and application deployment."
+      ]
     }
   ],
   "education": [
@@ -37,16 +92,31 @@
     }
   ],
   "skills": {
-    "🤖 AI/ML": "LLMs (GPT-4, Claude, Gemini), LangChain, LangGraph, MCP, RAG, fine-tuning, embeddings and vector databases",
-    "🔧 Backend": "Python, FastAPI and Django",
-    "🎨 Frontend": "React and TypeScript",
-    "🗄️ Databases": "PostgreSQL, SQLAlchemy, Redis and Pinecone",
-    "☁️ Cloud & DevOps": "AWS, Docker and CI/CD",
-    "⚙️ MLOps": "MLflow and Hugging Face",
-    "📊 AI Frameworks": "PyTorch, TensorFlow, Transformers, NumPy, Pandas and Matplotlib",
-    "🛠️ Tools": "Git/GitHub, Postman, Jira and VS Code"
+    "🤖 AI & Agentic Systems": "LangChain, LangGraph, RAG, MCP, Vector DBs, Prompt Engineering, LLM APIs (Groq, Gemini, OpenRouter)",
+    "🧠 Machine Learning & Deep Learning": "Scikit-learn, PyTorch, TensorFlow, CNNs, Computer Vision, Model Preprocessing & Training, Feature Scaling, Hyperparameter Tuning",
+    "📊 Data Science & Numerical Computing": "NumPy, Pandas, Matplotlib, Data Cleaning & Normalization, Exploratory Analysis",
+    "🔧 Backend & Systems": "Python, C/C++, FastAPI, REST APIs, Microservices, Django",
+    "🎨 Frontend & Web": "React.js, JavaScript, TypeScript, Interactive Dashboards",
+    "🗄️ Databases": "SQL, PostgreSQL, SQLAlchemy, Vector DBs, Redis, Pinecone",
+    "☁️ Cloud, DevOps & Infrastructure": "AWS, Docker, Kubernetes, Nginx Load Balancing, CI/CD pipelines",
+    "🛠️ Version Control & Tools": "Git, GitHub, GitLab, Postman, Jira, VS Code",
+    "📋 Tools of the Trade": "Python | C/C++ | Scikit-learn | PyTorch | TensorFlow | Pandas | NumPy | Matplotlib | FastAPI | REST APIs | React.js | SQL | Vector DB | LangChain | LangGraph | RAG | MCP | Git | GitLab | GitHub | Docker | CI/CD | Nginx | Kubernetes | AWS"
   },
   "projects": [
+    {
+      "name": "🏭 SB CONTROL SYSTEMS — Power Plant E&I Spares (Client Project)",
+      "technologies": "Full Stack Web Application, React.js, Responsive UI, Production Cloud Deployment",
+      "details": "Deployed commercial web platform for SB CONTROL SYSTEMS, an industrial enterprise in Chhattisgarh supplying electrical & instrumentation spares for power plants and heavy industry.",
+      "live": "https://sbcontrolsys.com/",
+      "client": "SB CONTROL SYSTEMS (Janjgir, Chhattisgarh)",
+      "gstin": "22DMDPG9332M1ZY"
+    },
+    {
+      "name": "⚡ ReAct — Autonomous AI & ML Inference Platform",
+      "technologies": "Python, FastAPI, LangChain, Scikit-learn, React.js, Docker, Nginx, Groq",
+      "details": "A production-grade dual-microservice platform combining high-performance ML inference (Iris KNN classifier & Titanic LinearSVC predictor) with an autonomous LangChain ReAct agent and real-time React analytics visualizer behind Nginx load balancing.",
+      "repository": "https://github.com/Subham110/ReAct"
+    },
     {
       "name": "💬 AI Document Chat Platform",
       "technologies": "React, FastAPI, GPT-4o, Pinecone, PostgreSQL and AWS",

@@ -926,10 +926,15 @@ h2 em {
   color: white;
   border-color: var(--primary);
 }
+.live-projects-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
 .live-project {
   background: var(--deep);
   color: white;
-  margin-top: 28px;
   border-radius: 8px;
   padding: 16px 19px;
   display: flex;
@@ -937,6 +942,17 @@ h2 em {
   justify-content: space-between;
   font-size: 0.88rem;
   font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
+}
+.live-project:hover {
+  transform: translateY(-2px);
+  background: #09372e;
+}
+.live-project.secondary-live {
+  background: #1e293b;
+}
+.live-project.secondary-live:hover {
+  background: #0f172a;
 }
 .live-project span {
   display: flex;
